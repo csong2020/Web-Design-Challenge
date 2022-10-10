@@ -1,103 +1,39 @@
-body {
-    background: #cbf1f5;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    width:100%;
-    
-}
-  
-h1 {
-    color: #71c9ce;
-    font-size: 25px;
-    padding: 20px 0px 5px 5px;
-    font-weight: bold;
-}
-
-h2 {
-  color: #71c9ce;
-  font-size: 20px;
-  padding: 20px 0px 5px 5px;
+.td,
+th {
+  padding: 6px;
+  border: 1px solid rgb(0, 250, 196);
   text-align: center;
 }
 
-.big_img {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.tbody,
+td {
+  border: 1px solid rgb(230, 230, 230);
+  text-align: center;
+  grid-auto-rows: max-content;
 }
 
-.small_img {
-  max-width:49%;
-  max-height:50%;
-  padding: 15px;
-}
-
-.content {
-  background:#e3fdfd;
-  padding: 10px 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  border: 3px;
-  border-style:double;
-  border-color: rgb(158, 211, 193);
-}
-
-.table_content {
-  background:#e3fdfd;
-  margin: 60px 10px 60px 10px;
-  border: 3px;
-  border-style: solid;
-  border-color: rgb(158, 211, 193);
-}
-
-.navbar-custom { 
-  color: rgb(116, 186, 162);
-  font-weight: bold;
-  background: #a6e3e9;
-}
-
-.navbar-custom-table { 
-  color: rgb(116, 186, 162);
-  font-weight: bold;
-  background: #a6e3e9;
-}
-
-.table_setting {
+.table {
   width: 100%;
+  border-collapse: collapse;
 }
 
-@media (max-width: 900px) {
-  .table_body {
-    background: #e3fdfd;
-  }
-  
-  .table_content {
-    background:#e3fdfd;
-    margin: 0px 10px 0px 10px;
-    border: 0px;
-  }
-
-  .navbar-custom-table { 
-    color: rgb(116, 186, 162);
-    font-weight: bold;
-    background: #e3fdfd;
-  }
+/* https://getbootstrap.com/docs/4.0/components/navbar/ */
+.collapse navbar-collapse {
+  float: right;
 }
 
-@media (max-width: 767px) {
-  body {
-    background: #e3fdfd;
-  }
+.nav-link {
+  float: right;
+}
 
-  .content {
-    background: #e3fdfd;
-    margin: 0px 30px 0px 30px;
-    border: 0px;
-  }
+.nav-link dropdown-toggle {
+  float: right;
+}
+
+#navbarDropdown {
+  float: right;
+}
+
+#navbarSupportedContent {
+  float: right;
 }
