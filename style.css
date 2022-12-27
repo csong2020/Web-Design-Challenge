@@ -1,3 +1,11 @@
+html{
+  background-color: #eceeef;  
+}
+
+.main_container{
+  background-color: #eceeef; 
+}
+
 .td,
 th {
   padding: 6px;
@@ -37,3 +45,32 @@ td {
 #navbarSupportedContent {
   float: right;
 }
+
+hr.style1{
+	border-top: 2px solid #343a40; 
+}
+
+.header h1 {
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;  
+  color: #78c2ad; 
+} 
+
+/* Slightly change the h3 header */
+.header h3 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 25px; 
+  text-align: center; 
+  color: #78c2ad; 
+} 
+
+/* Adjust paragraph font */
+p.p1 {
+  margin: 25px;
+  line-height: 2;
+  font-size: 18px ;  
+  padding: 5px;
+}  

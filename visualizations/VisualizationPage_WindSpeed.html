@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Comparision</title>
+    <title>Wind Speed</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -26,17 +27,15 @@
             Plots
           </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                        <a class="dropdown-item" href="visualizations/VisualizationPage_MaxTemp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="visualizations/VisualizationPage_Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="visualizations/VisualizationPage_Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="visualizations/VisualizationPage_WindSpeed.html">Wind Speed</a>
                     </div>
                 </li>
-
                 <li class='nav-item'>
                     <a class='nav-link' href="comparison.html">Comparision</a>
                 </li>
-
                 <li class='nav-item'>
                     <a class='nav-link' href="data.html">Data</a>
                 </li>
@@ -44,52 +43,30 @@
             </ul>
         </div>
     </nav>
-    
     <div class='container'>
         <div class='row'>
-            <div class='col-md-12'>
-                <h2>
-                    <strong>
-                        Comparing Latitude vs Max Temp/Humidty/Cloudiness/Wind Speed
-                    </strong>
-                </h2>
+            <div class='col-md-6'>
+                <h2><strong>
+                   Wind Speed
+               </strong></h2>
+                <hr>
+                <img src="/assets/images/Fig4.png" width="1000" height="700" alt="#">
+                <p>
+                    From this graph, there is no noticeable correlation between wind speed and latitude.<br>
+                    The values tend to concentrate between 0-5 mph, but otherwise there is no trend.<br>
+                    There are a few outliers in the northern latitudes.<br>
+                    This could be explained by a higher concentration of mountains in the northern hemisphere compared to the southern hemisphere.
+                </p>
 
             </div>
+
         </div>
-        <div class='row'>
-            <div class='col-md-6'>
-                <h4><strong>vs. Max Temperature</strong></h4>
-                <a href="max-temp.html"><img src="Resources/assets/images/Fig1.png" width="500" height="500" alt="">
-                </a>
-            </div>
-            <div class='col-md-6'>
-                <h4><strong>vs. Humidity</strong></h4>
-                <a href="humidity.html">
-                    <img src="Resources/assets/images/Fig2.png" width='500' height="500" alt="">
-                </a>
-            </div>
-        </div>
-        <div class='row'>
-            <div class='col-md-6'>
-                <h4><strong>vs. Cloudiness</strong></h4>
-                <a href="cloudiness.html">
-                    <img src="Resources/assets/images/Fig3.png" width="500" height="500" alt="">
-                </a>
-            </div>
-            <div class='col-md-6'>
-                <h4><strong>vs. Wind Speed</strong></h4>
-                <a href="wind-speed.html">
-                    <img src="Resources/assets/images/Fig4.png" width="500" height="500" alt="">
-                </a>
-            </div>
-        </div>
+
     </div>
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>
 
